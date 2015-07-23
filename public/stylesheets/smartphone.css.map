@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "smartphone.css",
+	"sources": [
+		"smartphone.sass"
+	],
+	"sourcesContent": [],
+	"mappings": "AAAA,IAAI,CAAC;EACH,UAAU,EAAE,IAAK,GADb;;AAEI,UAAU,AAAA,MAAM,CAAT;EACf,OAAO,EAAE,mBAAoB,GADb;;AAED,EAAE,CAAC,IAAI,EAAE,OAAO,CAAC,EAAE,CAAhB;EAClB,OAAO,EAAE,IAAK,GADK;;AAErB,IAAI,CAAC;EACH,SAAS,EAAE,QAAS,GADhB;;AAEE,MAAM,EAAE,KAAK,CAAP;EACZ,SAAS,EAAE,KAAM,GADJ",
+	"names": []
+}

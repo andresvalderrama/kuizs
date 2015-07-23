@@ -2,7 +2,11 @@
 <html>
   <head>
     <title>Preguntas</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' type='text/css' media='only screen and (min-width: 530px) and (min-device-width: 481px)' href='/stylesheets/wide.css'/>
+    <link rel='stylesheet' type='text/css' media='only screen and (max-width: 480px)' href='/stylesheets/smartphone.css'/>
+
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -23,18 +27,20 @@
     <meta name="theme-color" content="#d7124a">
   </head>
   <body>
-    <header>
-      <h1>Quiz, el juego de las preguntas</h1>
-    </header>
-    <nav>
-      <a href="/">Inicio</a>
-      <a href="/quizes/question">Preguntas</a>
-    </nav>
-    <section>
-      <%- body %>
-    </section>
-    <footer>
-      <a href="http://es.wikipedia.org/wiki/Quiz">Que es un Quiz?</a>
-    </footer>
+    <div id="page-wrap">
+      <header class="main" id="h1">
+        <h1>Quiz, el juego de las preguntas</h1>
+      </header>
+      <nav class="main" id="n1" role="navigation">
+        <a href="/">Inicio</a>
+        <a href="/quizes/question">Preguntas</a>
+      </nav>
+      <section class="main" id="s1">
+        <%- body %>
+      </section>
+      <footer class="main" id="f1">
+        <a href="http://es.wikipedia.org/wiki/Quiz">Que es un Quiz?</a>
+      </footer>
+    </div>
   </body>
 </html>
