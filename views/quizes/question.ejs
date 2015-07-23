@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title><%= pregunta %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -23,9 +23,12 @@
     <meta name="theme-color" content="#d7124a">
   </head>
   <body>
-    <h1>Bienvenido a <%= title %></h1>
-    <p>El portal donde podrá crear sus propios juegos!</p>
+    <h2>Quiz, el juedo de la preguntas</h2>
 
-    <a href="/quizes/question">Capital de Roma?</a>
+    <h4><%= pregunta %>?</h4>
+    <form class="" action="/quizes/answer" method="get">
+      <input type="text" name="respuesta" placeholder="Responda aqui" id="respuesta" required autocomplete="off" autofocus>
+      <input type="submit" value="Responder">
+    </form>
   </body>
 </html>
